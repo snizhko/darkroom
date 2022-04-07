@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Darkroom agency</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+<div class="notification js-notification is-active">
+    <span class="notification_text">Yoga with Dr. Danielle —    LIVE class in session</span>
+    <button class="notification_btn js-notification-btn" title="Close">Close</button>
+</div>
+<header>
+    <div class="nav-switcher">
+        <div class="user-info">O</div>
+        <button class="nav-switcher_btn js-nav-switcher-btn"></button>
+    </div>
+    <div class="header_inner">
+        <div class="authorization">
+            <div class="authorization_item authorization_item__sign-in">
+                <button class="authorization_btn">Sign In</button>
+            </div>
+            <div class="authorization_item authorization_item__search">
+                <button class="authorization_btn">Search</button>
+            </div>
+            <div class="authorization_item authorization_item__user">
+                <div class="user-info">O</div>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav_item js-nav-item">
+                    <button class="nav_btn js-nav-btn">Shop</button>
+                    <ul class="submenu js-submenu">
+                        <li class="submenu_item">
+                            <a href="#" class="submenu_link">Our Story</a>
+                            <div class="submenu_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Animi
+                                delectus laboriosam libero molestiae, odit pariatur provident qui quia, quisquam
+                                reprehenderit repudiandae saepe soluta tempore tenetur voluptatibus! Delectus ipsa
+                                laborum
+                                porro.
+                            </div>
+                        </li>
+                        <li class="submenu_item">
+                            <a href="#" class="submenu_link">Our Approach</a>
+                            <div class="submenu_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Animi
+                                deserunt ex explicabo, laborum maxime necessitatibus neque possimus qui quo rerum. Atque
+                                debitis dolore ea error maxime quibusdam repellendus sint tempore!
+                            </div>
+                        </li>
+                        <li class="submenu_item">
+                            <a href="#" class="submenu_link">Our Community</a>
+                            <div class="submenu_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Beatae ducimus incidunt optio suscipit temporibus! Amet animi corporis ducimus quos
+                                repellendus tempora tenetur. Blanditiis ipsum maiores nisi obcaecati quasi, repellat
+                                repudiandae.
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_item js-nav-item">
+                    <button class="nav_btn js-nav-btn">About</button>
+                    <ul class="submenu js-submenu">
+                        <li class="submenu_item">
+                            <a href="#" class="submenu_link">Our Story</a>
+                            <div class="submenu_description">Learn about Dr. Danielle and her vision for Fierce Clarity.
+                                Read our origin story.
+                            </div>
+                        </li>
+                        <li class="submenu_item">
+                            <a href="#" class="submenu_link">Our Approach</a>
+                            <div class="submenu_description">We approach health holistically, mind + body + spirit.
+                                Learn
+                                how we tackle all three.
+                            </div>
+                        </li>
+                        <li class="submenu_item">
+                            <a href="#" class="submenu_link">Our Community</a>
+                            <div class="submenu_description">The FC Gang is here to support and to be supported. Dive
+                                into
+                                our community.
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_item js-nav-item">
+                    <button class="nav_btn js-nav-btn">Comunity</button>
+                    <ul class="submenu js-submenu">
+                        <li class="submenu_item">
+                            <a href="#" class="submenu_link">Universal Wellness</a>
+                            <div class="submenu_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Atque
+                                cupiditate eaque fuga iusto.
+                            </div>
+                        </li>
+                        <li class="submenu_item">
+                            <a href="#" class="submenu_link">Classes</a>
+                            <div class="submenu_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Alias
+                                assumenda.
+                            </div>
+                        </li>
+                        <li class="submenu_item">
+                            <a href="#" class="submenu_link">FC Gang</a>
+                            <div class="submenu_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Amet,
+                                laboriosam, soluta.
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_item js-nav-item">
+                    <button class="nav_btn js-nav-btn">Expirience</button>
+                    <ul class="submenu js-submenu">
+                        <li class="submenu_item">
+                            <a href="#" class="submenu_link">FC Experiences</a>
+                            <div class="submenu_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ab ad
+                                autem blanditiis cupiditate!
+                            </div>
+                        </li>
+                        <li class="submenu_item">
+                            <a href="#" class="submenu_link">Custom Events</a>
+                            <div class="submenu_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                                adipisci consectetur et libero quas.
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav-social">
+            <div class="nav-email">
+                <a href="mailto:info@fierceclarity.com">info@fierceclarity.com</a>
+            </div>
+            <ul class="nav-social_list">
+                <li><a class="social-link social-link__instagram" target="_blank"
+                       href="https://instagram.com/">instagram</a>
+                </li>
+                <li><a class="social-link social-link__facebook" target="_blank"
+                       href="https://facebook.com/">facebook</a>
+                </li>
+                <li><a class="social-link social-link__twitter" target="_blank"
+                       href="https://twitter.com/">twitter</a>
+                </li>
+                <li><a class="social-link social-link__tiktok" target="_blank"
+                       href="https://tiktok.com/">tiktok</a></li>
+                <li><a class="social-link social-link__youtube" target="_blank"
+                       href="https://youtube.com/">youtube</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="section section__main">
+        <div class="main-decoration_wrap">
+            <div class="main-decoration">
+                <img src="./img/img-1.jpg" alt="women holding hands up">
+            </div>
+        </div>
+        <div class="main-info">
+            <div class="main-info_title">Start living your healthiest life.</div>
+            <div class="main-info_description">We provide wellness experiences and lifestyle design tools to help you
+                live your happiest + healthiest life. We focus on mind + body + spirit and teach you how to step into
+                your power and create the life of your dreams. We connect you with a like-minded community because we
+                are a tribe and we’ve been waiting for you.
+            </div>
+            <a href="#" class="main-info_link">
+                Join the Community
+            </a>
+        </div>
+        <div class="main-decoration-3">
+            <img src="./img/icons/star-2.svg" alt="black star with 10 angles">
+        </div>
+    </section>
+    <section class="section section__collection">
+        <div class="collection-info">
+            <div class="collection-info_title">Be happy, be healthy, be fly.</div>
+            <div class="collection-info_description">Live your best life in Fierce Clarity Activewear.</div>
+            <a href="#" class="collection-info_link">
+                Shop the collection
+            </a>
+        </div>
+        <div class="collection-slider js-collection-slider">
+            <div class="collection-slider_item">
+                <div class="collection-item">
+                    <div class="collection-item_img-wrap">
+                        <img src="./img/models/model-1.jpg" alt="model 1" class="collection-item_img">
+                    </div>
+                    <div class="collection-item_info-wrap">
+                        <div class="collection-item_info">
+                            <div class="collection-item_title">Biker Short</div>
+                            <div class="collection-item_price">
+                                <span class="collection-item_currency">$</span>
+                                <span>65.00</span>
+                            </div>
+                        </div>
+                        <ul class="collection-colors">
+                            <li class="collection-color collection-color__1"></li>
+                            <li class="collection-color collection-color__2"></li>
+                            <li class="collection-color collection-color__3"></li>
+                            <li class="collection-color collection-color__4 is-active"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="collection-slider_item">
+                <div class="collection-item">
+                    <div class="collection-item_img-wrap">
+                        <img src="./img/models/model-2.jpg" alt="model 2" class="collection-item_img">
+                    </div>
+                    <div class="collection-item_info-wrap">
+                        <div class="collection-item_info">
+                            <div class="collection-item_title">Biker Short</div>
+                            <div class="collection-item_price">
+                                <span class="collection-item_currency">$</span>
+                                <span>65.00</span>
+                            </div>
+                        </div>
+                        <ul class="collection-colors">
+                            <li class="collection-color collection-color__1 is-active"></li>
+                            <li class="collection-color collection-color__2"></li>
+                            <li class="collection-color collection-color__3"></li>
+                            <li class="collection-color collection-color__4"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="collection-slider_item">
+                <div class="collection-item">
+                    <div class="collection-item_img-wrap">
+                        <img src="./img/models/model-1.jpg" alt="model 3" class="collection-item_img">
+                    </div>
+                    <div class="collection-item_info-wrap">
+                        <div class="collection-item_info">
+                            <div class="collection-item_title">Biker Short</div>
+                            <div class="collection-item_price">
+                                <span class="collection-item_currency">$</span>
+                                <span>65.00</span>
+                            </div>
+                        </div>
+                        <ul class="collection-colors">
+                            <li class="collection-color collection-color__1"></li>
+                            <li class="collection-color collection-color__2"></li>
+                            <li class="collection-color collection-color__3"></li>
+                            <li class="collection-color collection-color__4 is-active"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="collection-slider_item">
+                <div class="collection-item">
+                    <div class="collection-item_img-wrap">
+                        <img src="./img/models/model-2.jpg" alt="model 4" class="collection-item_img">
+                    </div>
+                    <div class="collection-item_info-wrap">
+                        <div class="collection-item_info">
+                            <div class="collection-item_title">Biker Short</div>
+                            <div class="collection-item_price">
+                                <span class="collection-item_currency">$</span>
+                                <span>65.00</span>
+                            </div>
+                        </div>
+                        <ul class="collection-colors">
+                            <li class="collection-color collection-color__1"></li>
+                            <li class="collection-color collection-color__2"></li>
+                            <li class="collection-color collection-color__3 is-active"></li>
+                            <li class="collection-color collection-color__4"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="section section__footer">
+        <div class="footer-row">
+            <a href="#" class="footer_logo-link">
+                <img src="./img/logo.svg" alt="Logo" class="footer_logo">
+            </a>
+            <div class="footer-data footer-data__support">
+                <div class="footer-data_title">Support</div>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping + Returns</a></li>
+                    <li><a href="#">Sizing</a></li>
+                    <li><a href="#">Privacy & Terms</a></li>
+                    <li><a href="#">Cookie Use</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-data footer-data__about">
+                <div class="footer-data_title">About</div>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Media + Partnerships</a></li>
+                    <li><a href="#">FC Gang</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-data footer-data__contactus">
+                <div class="footer-data_title">Contact Us</div>
+                <div class="footer-data_email">
+                    <a href="mailto:info@fierceclarity.com">info@fierceclarity.com</a>
+                </div>
+                <ul class="footer-data_social">
+                    <li><a class="social-link social-link__instagram" target="_blank"
+                           href="https://instagram.com/">instagram</a>
+                    </li>
+                    <li><a class="social-link social-link__facebook" target="_blank"
+                           href="https://facebook.com/">facebook</a>
+                    </li>
+                    <li><a class="social-link social-link__twitter" target="_blank"
+                           href="https://twitter.com/">twitter</a>
+                    </li>
+                    <li><a class="social-link social-link__tiktok" target="_blank"
+                           href="https://tiktok.com/">tiktok</a></li>
+                    <li><a class="social-link social-link__youtube" target="_blank"
+                           href="https://youtube.com/">youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-row footer-row__coppy">
+            <div class="coppy">
+                Copyright Fierce Clarity 2022 &#169; All Rights Reserved.
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+</body>
+</html>
+
+<!--2.5 hours - markup planning + materials (images)-->
