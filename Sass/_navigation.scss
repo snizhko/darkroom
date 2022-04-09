@@ -1,0 +1,105 @@
+.nav-social {
+  display: none;
+}
+
+nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 20px auto 0;
+  max-width: 680px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &_item {
+    margin: 0 20px;
+  }
+
+  &_btn {
+    font: 400 15px/31px 'Whyte';
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #485042;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -4px;
+      left: -20px;
+      width: calc(100% + 40px);
+      height: 36px;
+      border-radius: 50%;
+      background-color: #FCFEA2;
+      opacity: 0;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    &:hover + .submenu {
+      @include visibility;
+    }
+  }
+
+  &_item.is-active &_btn::before {
+    opacity: 1;
+  }
+}
+
+/*navigation switcher*/
+.nav-switcher {
+  display: none;
+  align-items: center;
+  order: 1;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 20px;
+  border-bottom: 1px solid #485042;
+
+  &_btn {
+    width: 25px;
+    height: 18px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: transform linear .2s;
+    }
+
+    &::before {
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+    }
+
+    &::after {
+      height: 1px;
+      background-color: #222;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}

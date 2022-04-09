@@ -1,0 +1,38 @@
+.notification {
+  @include visibility(hidden);
+
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #222;
+  padding: 12px;
+  margin: -40px 20px 0;
+  transition: linear .15s, $transition-main, $transition-main;
+  transition-property: margin-top, opacity, visibility;
+  pointer-events: none;
+
+  &_text {
+    font: 400 13px/17px 'Whyte';
+    color: #fcfea2;
+  }
+
+  &_btn {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background: url('../img/icons/star.svg') no-repeat center / cover;
+  }
+
+  &.is-active {
+    @include visibility;
+    margin-top: 20px;
+    pointer-events: initial;
+  }
+}

@@ -1,0 +1,25 @@
+.social-link {
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .5;
+
+  &__instagram {
+    background-image: url(../img/social/insta.svg);
+  }
+
+  &__facebook {
+    background-image: url(../img/social/facebook.svg);
+  }
+
+  &__twitter {
+    background-image: url(../img/social/twitter.svg);
+  }
+
+  &__tiktok {
+    background-image: url(../img/social/tiktok.svg);
+  }
+
+  &__youtube {
+    background-image: url(../img/social/youtube.svg);
+  }
+}

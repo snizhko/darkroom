@@ -1,0 +1,65 @@
+footer {
+  background-color: #D8DEDE;
+  color: #42716B;
+}
+
+.footer-row {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1150px;
+  width: 100%;
+
+  &__coppy {
+    margin-top: 80px;
+  }
+}
+
+.footer-data {
+  margin: 0 40px;
+
+  &_title {
+    font: 25px Cheltenham;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+  }
+  & a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 16px;
+    line-height: 26px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &_social {
+    display: flex;
+    margin-top: 30px;
+
+    & li {
+      margin-right: 24px;
+    }
+
+    & a {
+      font-size: 0;
+      width: 17px;
+      height: 17px;
+      display: block;
+    }
+  }
+}
+
+.footer_logo-link {
+  width: 205px;
+  height: 40px;
+  display: block;
+  margin-right: auto;
+  flex-shrink: 0;
+}
+
+.coppy {
+  font-size: 11px;
+  opacity: .5;
+}

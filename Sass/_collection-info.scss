@@ -1,0 +1,39 @@
+.collection-info {
+  &_title {
+    font: 400 70px/70px 'Cheltenham';
+    letter-spacing: -4px;
+    margin-bottom: 60px;
+  }
+
+  &_description {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -1px;
+  }
+
+  &_link {
+    margin-top: 80px;
+    font: 25px/30px Cheltenham;
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    position: relative;
+    margin-right: auto;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 100%;
+      margin: auto 0 auto 7px;
+      width: 16px;
+      height: 16px;
+      background: url(../img/icons/arrow.svg) no-repeat center center;
+    }
+
+    &:hover::after {
+      animation: slideToRight $transition-main;
+    }
+  }
+}

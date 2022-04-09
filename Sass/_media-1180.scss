@@ -1,0 +1,94 @@
+@media screen and (max-width: 1180px) {
+  nav {
+    right: auto;
+    left: 20px;
+  }
+
+  .submenu {
+    margin-left: 0;
+    transform: translateX(0);
+  }
+
+  .nav_btn::before {
+    left: -10px;
+    width: calc(100% + 20px);
+  }
+
+  .main-decoration {
+    width: 200px;
+    height: 242px;
+
+    &_wrap {
+      left: calc(50% - 420px);
+      width: 350px;
+      height: 350px;
+    }
+
+    &-3 {
+      width: 40px;
+      height: 40px;
+      bottom: 43px;
+      right: 28px;
+    }
+  }
+
+  .main-info {
+    min-height: 460px;
+  }
+
+  .collection-info {
+    max-width: 320px;
+    margin: 28px 0 0;
+
+    &_title {
+      font: 400 40px/40px 'Cheltenham';
+      margin-bottom: 20px;
+    }
+
+    &_link {
+      margin-top: 40px;
+    }
+  }
+
+  .collection-slider {
+    max-width: calc(100% - 360px);
+    margin-right: 0;
+    margin-left: auto;
+
+    & .slick-list {
+      margin-right: 0
+    }
+  }
+
+  .collection-item {
+    &_title {
+      font-size: 16px;
+      margin-right: 5px;
+    }
+
+    &_price {
+      font-size: 14px;
+      margin: 0 0 0 auto;
+    }
+
+    &_info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      &-wrap {
+        padding: 20px 5px;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .collection-colors {
+    margin: 10px 0 0;
+  }
+
+  .collection-color {
+    margin: 0 10px 0 0;
+  }
+}

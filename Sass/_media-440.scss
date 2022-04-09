@@ -1,0 +1,54 @@
+@media screen and (max-width: 440px) {
+  .section__collection {
+    padding-bottom: 40px;
+  }
+  .main-decoration {
+    width: 133px;
+    height: 160px;
+
+    &_wrap {
+      width: 250px;
+      height: 250px;
+    }
+
+    &-3 {
+      top: 30px;
+      right: 0;
+    }
+  }
+  .main-info {
+    &_title {
+      font-size: 35px;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    &_link {
+      margin-top: 40px;
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    &_description {
+      font-size: 14px;
+    }
+  }
+
+  .collection-info {
+    &_link {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    &_title {
+      font-size: 35px;
+      letter-spacing: -2px;
+    }
+
+    &_description {
+      font-size: 16px;
+      letter-spacing: initial;
+      line-height: 1;
+    }
+  }
+}

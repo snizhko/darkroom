@@ -1,0 +1,9 @@
+@mixin visibility($visibility: visible) {
+  @if $visibility == hidden {
+    opacity: 0;
+    visibility: $visibility;
+  } @else {
+    opacity: 1;
+    visibility: $visibility;
+  }
+}

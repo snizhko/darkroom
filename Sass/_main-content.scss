@@ -1,0 +1,76 @@
+.main-info {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 90px 0 auto;
+  min-height: 780px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &_title {
+    font-family: 'Whyte100';
+    font-size: 50px;
+    line-height: 45px;
+    margin-bottom: 40px;
+  }
+
+  &_description {
+    line-height: 18px;
+    font-size: 16px;
+  }
+
+  &_link {
+    margin-top: 80px;
+    font: 25px/30px Cheltenham;
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    position: relative;
+    margin-right: auto;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 100%;
+      margin: auto 0 auto 7px;
+      width: 16px;
+      height: 16px;
+      background: url(../img/icons/arrow.svg) no-repeat center center;
+    }
+
+    &:hover::after {
+      animation: slideToRight $transition-main;
+    }
+  }
+}
+
+.main-decoration {
+  width: 400px;
+  height: 484px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+
+  &_wrap {
+    width: 740px;
+    height: 740px;
+    position: absolute;
+    left: calc(50% - 740px);
+    top: 40px;
+    background: url(../img/words-circle.svg) no-repeat center / cover;
+    z-index: 1;
+  }
+
+  &-3 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+}

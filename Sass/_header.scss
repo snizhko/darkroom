@@ -1,0 +1,49 @@
+header {
+  position: relative;
+  padding-top: 20px;
+  background-color: #fff;
+
+  &.is-active .nav-switcher_btn::before {
+    transform: rotate(90deg);
+  }
+
+  &.is-active .nav-switcher_btn::after {
+    transform: rotate(-90deg);
+  }
+}
+
+.header_inner {
+  display: flex;
+  align-items: center;
+}
+
+.authorization {
+  margin: 0 20px 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  height: 60px;
+
+  &_btn {
+    margin-left: 40px;
+    font: 400 15px/31px 'Whyte';
+    text-align: right;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #485042;
+  }
+}
+
+/*user info*/
+.user-info {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  line-height: 32px;
+  background: #222;
+  border-radius: 50%;
+  color: #fff;
+  margin-left: 40px;
+}
